@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio website</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
-    <h2>CompterChoice: <span id ="computer-choice"></span></h2>
-    <h2>YourChoice: <span id ="your-choice"></span></h2>
-    <h2>Result: <span id ="result"></span></h2>
+  <body>
+    <div id="rounds">5 Lives</div>
+    <button id="rock">Rock</button>
+    <button id="scissors">Scissors</button>
+    <button id="paper">Paper</button>
+    <h2>YourChoice: <span id="your-choice"> </span></h2>
+    <h2>ComputerChoice: <span id="computer-choice"></span></h2>
+    <h2>Result: <span id="result"></span></h2>
+    <table>
+      <tr>
+        <th>Team</th>
+        <th>Scores</th>
+      </tr>
+      <tr>
+        <td>Computer-choice</td>
+        <td id="computer-result"></td>
+      </tr>
+      <tr>
+        <td>Player-choice</td>
+        <td id="player-result"></td>
+      </tr>
+      <tr>
+        <td>Draw</td>
+        <td id="draw-result"></td>
+      </tr>
+      <tr>
+        <td>Result</td>
+        <td id="team-result"></td>
+      </tr>
+    </table>
 
-    <button id ="rock">Rock</button>
-    <button id ="scissor">Scissors</button>
-    <button id ="paper">Paper</button>
+    <button class="game">Retry</button>
     <script src="app.js"></script>
-</body>
-    </html>
+  </body>
+</html>
